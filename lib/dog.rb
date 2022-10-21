@@ -1,19 +1,18 @@
 require 'pry'
 
 class Dog
-# class body
+  def name=(dog_name)
+    @this_dogs_name = dog_name
+  end
 
-def bark
-    puts "Woof!"
-  end 
-def sit 
-    puts "The Dog is sitting"
+
+def name
+  @this_dogs_name
 
  end
 end
 
-fido = Dog.new
-fido.bark
+lassie = Dog.new
+lassie.name = "Lassie"
 
-fido = Dog.new
-fido.sit 
+puts lassie.name
